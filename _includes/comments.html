@@ -15,7 +15,27 @@
          })(document, 'script');
       </script>
       <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
-      </div>
+      </div> -->
+
+      <!-- LiveRe City install code -->
+    <div id="lv-container" data-id="city" data-uid="MTAyMC81NjE2Mi8zMjYyNQ==">
+    <script type="text/javascript">
+     (function(d, s) {
+         var j, e = d.getElementsByTagName(s)[0];
+
+         if (typeof LivereTower === 'function') { return; }
+
+         j = d.createElement(s);
+         j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+         j.async = true;
+
+         e.parentNode.insertBefore(j, e);
+     })(document, 'script');
+    </script>
+    <noscript> Please activate JavaScript for write a comment in LiveRe</noscript>
+    </div>
+    <!-- completed City install code -->
+
 
   {% elsif site.comment.disqus %}
     <div id="disqus_thread"></div>
@@ -34,25 +54,10 @@
             (d.head || d.body).appendChild(s);
         })();
     </script>
-    <noscript>要查看<a href="http://disqus.com/?ref_noscript"> Disqus </a>评论，请启用 JavaScript</noscript> -->
-    <!-- LiveRe City install code -->
-<div id="lv-container" data-id="city" data-uid="MTAyMC81NjE2Mi8zMjYyNQ==">
-	<script type="text/javascript">
-   (function(d, s) {
-       var j, e = d.getElementsByTagName(s)[0];
+    <noscript>要查看<a href="http://disqus.com/?ref_noscript"> Disqus </a>评论，请启用 JavaScript</noscript>
 
-       if (typeof LivereTower === 'function') { return; }
 
-       j = d.createElement(s);
-       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-       j.async = true;
 
-       e.parentNode.insertBefore(j, e);
-   })(document, 'script');
-	</script>
-<noscript> Please activate JavaScript for write a comment in LiveRe</noscript>
-</div>
-<!-- completed City install code -->
   {% endif %}
 
 </section>
